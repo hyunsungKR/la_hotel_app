@@ -12,12 +12,13 @@ def run_userchoice_app():
     df = df.dropna()
     select=['good Fitness Center','Bar','Non-smoking Rooms']
     choice=st.sidebar.selectbox('Select',select)
+    st.sidebar.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafLhNSoFG5g8_hLOPiShZmi-F5fM__71w_w&usqp=CAU.jpg',width=300)
+    st.sidebar.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUGeiNkm6qDnnO2MWeHT6janC0Q6Xm6ELFe7u4ay6vooF8sKul89DvFDi0exJTOWaGBU&usqp=CAU.jpg',width=300)
 
     if choice == 'good Fitness Center' :
         st.title('좋은 헬스장을 소유하고있는 호텔 리스트입니다.')
         st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-o2sFUj25Q6-BkjMVjTfu89KwYFq006J_A&usqp=CAU.jpg',width=450)
-        st.sidebar.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafLhNSoFG5g8_hLOPiShZmi-F5fM__71w_w&usqp=CAU.jpg',width=300)
-        st.sidebar.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUGeiNkm6qDnnO2MWeHT6janC0Q6Xm6ELFe7u4ay6vooF8sKul89DvFDi0exJTOWaGBU&usqp=CAU.jpg',width=300)
+
         st.dataframe(df.loc[df[choice] == 1,])
 
         st.subheader('좋은 헬스장을 소유하고있는 호텔 중 평점이 가장 높은 여기는 어때요?')
