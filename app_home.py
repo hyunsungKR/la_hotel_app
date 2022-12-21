@@ -12,5 +12,5 @@ def run_home_app():
     st.sidebar.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0pmsRADg_SF56CBTgXZ95JEP1NFywsim2eG-tP58kujkSMzFJlLhK8wMDCHJ1fyl3Tus&usqp=CAU.jpg',width=300)
     st.title('NY 호텔은 여기야 놀자!👀')
     st.video('https://youtu.be/h3fUgOKFMNU',start_time=10,format='video/mp4')
-    st.info('📌뉴욕에 있는 호텔의 리뷰 데이터를 기반으로 EDA, 유저의 선택에 맞는 호텔을 추천해주는 기능을 구현한 앱입니다. ')
+    st.info('📌 뉴욕에 있는 호텔의 리뷰 데이터를 기반으로 EDA, 유저의 선택에 맞는 호텔을 추천해주는 기능을 구현한 앱입니다. ')
     st.image(image_url1,use_column_width=True)
